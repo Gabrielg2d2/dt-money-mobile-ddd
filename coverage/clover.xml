@@ -1,11 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1687471228878" clover="3.2.0">
-  <project timestamp="1687471228879" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
-    <file name="App.tsx" path="/home/g2d2/projects/dt-money-mobile/src/App.tsx">
+<coverage generated="1687471451613" clover="3.2.0">
+  <project timestamp="1687471451613" name="All files">
+    <metrics statements="107" coveredstatements="34" conditionals="18" coveredconditionals="4" methods="41" coveredmethods="17" elements="166" coveredelements="55" complexity="0" loc="107" ncloc="107" packages="10" files="17" classes="17"/>
+    <package name="src">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-    </file>
+      <file name="App.tsx" path="/home/g2d2/projects/dt-money-mobile/src/App.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.Cards">
+      <metrics statements="25" coveredstatements="18" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="5"/>
+      <file name="Cards.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Cards/Cards.ts">
+        <metrics statements="24" coveredstatements="18" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+      </file>
+      <file name="FactoryCards.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Cards/FactoryCards.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.Cards.service.get">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="getListTransactions.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Cards/service/get/getListTransactions.ts">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.Transaction">
+      <metrics statements="21" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <file name="FactoryTransaction.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Transaction/FactoryTransaction.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="Transaction.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Transaction/Transaction.ts">
+        <metrics statements="19" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+      </file>
+      <file name="interfacesTransactions.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Transaction/interfacesTransactions.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.domain.Transaction.service.create">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="createTransaction.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Transaction/service/create/createTransaction.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.Transaction.service.delete">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="deleteTransaction.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Transaction/service/delete/deleteTransaction.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.Transaction.service.get">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="getListTransactions.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Transaction/service/get/getListTransactions.ts">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.Transaction.service.update">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="updateTransaction.ts" path="/home/g2d2/projects/dt-money-mobile/src/domain/Transaction/service/update/updateTransaction.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.entity.Transaction">
+      <metrics statements="19" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <file name="AdapterZodTransaction.ts" path="/home/g2d2/projects/dt-money-mobile/src/entity/Transaction/AdapterZodTransaction.ts">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+      </file>
+      <file name="FactoryTransactionEntity.ts" path="/home/g2d2/projects/dt-money-mobile/src/entity/Transaction/FactoryTransactionEntity.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="TransactionEntity.ts" path="/home/g2d2/projects/dt-money-mobile/src/entity/Transaction/TransactionEntity.ts">
+        <metrics statements="11" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="59" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="61" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.infra">
+      <metrics statements="18" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11"/>
+      <file name="AdapterAxios.ts" path="/home/g2d2/projects/dt-money-mobile/src/infra/AdapterAxios.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="6"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+      </file>
+      <file name="HttpClient.ts" path="/home/g2d2/projects/dt-money-mobile/src/infra/HttpClient.ts">
+        <metrics statements="12" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="5"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+      </file>
+      <file name="IAdapterApi.ts" path="/home/g2d2/projects/dt-money-mobile/src/infra/IAdapterApi.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
   </project>
 </coverage>
