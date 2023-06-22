@@ -1,34 +1,32 @@
-import axios, { Axios } from 'axios'
-import { IAdapterApi } from './IAdapterApi'
+import axios, { Axios } from "axios";
+import { IAdapterApi } from "./IAdapterApi";
 
 export class AdapterAxios implements IAdapterApi {
-  private readonly api: Axios
+  private readonly api: Axios;
 
-  constructor(
-    private readonly baseURL: string = process.env.REACT_APP_API_URL
-  ) {
+  constructor(private readonly baseURL: string = "http://localhost:3333") {
     this.api = axios.create({
-      baseURL: this.baseURL
-    })
+      baseURL: this.baseURL,
+    });
   }
 
   get getAxios() {
-    return this.api
+    return this.api;
   }
 
   get getApi() {
-    return this.api.get
+    return this.api.get;
   }
 
   get postApi() {
-    return this.api.post
+    return this.api.post;
   }
 
   get putApi() {
-    return this.api.put
+    return this.api.put;
   }
 
   get deleteApi() {
-    return this.api.delete
+    return this.api.delete;
   }
 }

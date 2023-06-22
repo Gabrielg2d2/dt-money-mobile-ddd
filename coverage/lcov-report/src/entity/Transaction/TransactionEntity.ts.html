@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">71.42% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>10/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>6/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">90.9% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -157,13 +157,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -171,29 +171,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -203,20 +190,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { AdapterZodTransaction } from './AdapterZodTransaction'
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { AdapterZodTransaction } from "./AdapterZodTransaction";
 &nbsp;
-export type TransactionType = 'withdrawn' | 'deposit'
+export type TransactionType = "withdrawn" | "deposit";
 export type TransactionDataTypes = {
-  id: string | undefined
-  amount: number
-  date: string
-  category: string
-  type: TransactionType
-  name: string
-}
+  id: string | undefined;
+  amount: number;
+  date: string;
+  category: string;
+  type: TransactionType;
+  name: string;
+};
 &nbsp;
 export class TransactionEntity {
-<span class="fstat-no" title="function not covered" >  co</span>nstructor(
+  constructor(
     private readonly id: string | undefined,
     private readonly amount: number,
     private readonly date: string,
@@ -226,51 +226,51 @@ export class TransactionEntity {
     private readonly adapterValidationTransaction: AdapterZodTransaction
   ) {}
 &nbsp;
-<span class="fstat-no" title="function not covered" >  ve</span>rifyNewTransaction(): boolean {
-<span class="cstat-no" title="statement not covered" >    if (this.amount === 0) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error(</span>
-        'Amount must be positive for input and negative for output'
-      )
+  verifyNewTransaction(): boolean {
+    if (this.amount === 0) {
+      throw new Error(
+        "Amount must be positive for input and negative for output"
+      );
     }
     const validationResult =
-<span class="cstat-no" title="statement not covered" >      this.adapterValidationTransaction.validateNewTransaction({</span>
+      this.adapterValidationTransaction.validateNewTransaction({
         amount: this.amount,
         date: this.date,
         category: this.category,
         type: this.type,
-        name: this.name
-      })
+        name: this.name,
+      });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (!validationResult) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error('Invalid new transaction')</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!validationResult) {
+<span class="cstat-no" title="statement not covered" >      throw new Error("Invalid new transaction");</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return true</span>
+    return true;
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  cr</span>eate(): TransactionDataTypes {
-<span class="cstat-no" title="statement not covered" >    if (!this.verifyNewTransaction()) <span class="cstat-no" title="statement not covered" >return</span></span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
+  create(): TransactionDataTypes {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!this.verifyNewTransaction()) <span class="cstat-no" title="statement not covered" >return {} as TransactionDataTypes;</span>
+    return {
       id: this.id,
       amount: this.amount,
       date: this.date,
       category: this.category,
       type: this.type,
-      name: this.name
-    }
+      name: this.name,
+    };
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  up</span>date(): TransactionDataTypes {
-<span class="cstat-no" title="statement not covered" >    if (!this.verifyNewTransaction()) <span class="cstat-no" title="statement not covered" >return</span></span>
-<span class="cstat-no" title="statement not covered" >    if (!this.id) <span class="cstat-no" title="statement not covered" >throw new Error('Id is required to update')</span></span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
+  update(): TransactionDataTypes {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!this.verifyNewTransaction()) <span class="cstat-no" title="statement not covered" >return {} as TransactionDataTypes;</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!this.id) <span class="cstat-no" title="statement not covered" >throw new Error("Id is required to update");</span>
+    return {
       id: this.id,
       amount: this.amount,
       date: this.date,
       category: this.category,
       type: this.type,
-      name: this.name
-    }
+      name: this.name,
+    };
   }
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -280,7 +280,7 @@ export class TransactionEntity {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-06-22T22:04:11.591Z
+                at 2023-06-22T22:37:36.537Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
