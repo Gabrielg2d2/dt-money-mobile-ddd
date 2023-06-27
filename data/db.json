@@ -1,14 +1,6 @@
 {
   "transactions": [
     {
-      "id": "1",
-      "amount": 10000,
-      "date": "2023-06-16T22:03:41.179Z",
-      "category": "Salary",
-      "type": "deposit",
-      "name": "Transaction 1"
-    },
-    {
       "id": "2",
       "amount": 20032,
       "date": "2023-06-16T22:05:57.197Z",
@@ -19,7 +11,7 @@
     {
       "id": "3",
       "name": "Transaction 3",
-      "amount": 302,
+      "amount": 30000,
       "type": "deposit",
       "category": "Salary",
       "date": "2023-02-12T00:41:39.194Z"
@@ -71,6 +63,14 @@
       "category": "Salary",
       "type": "deposit",
       "name": "Transaction 9"
+    },
+    {
+      "id": "1",
+      "amount": 100,
+      "type": "deposit",
+      "category": "Category title",
+      "name": "Transaction title",
+      "date": "2021-01-01T00:00:00.000"
     }
   ]
 }

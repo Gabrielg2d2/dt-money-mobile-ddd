@@ -1,4 +1,4 @@
-import { TransactionDataTypes } from "@/entity/Transaction/TransactionEntity";
+import { TransactionDataTypes } from "../../entity/Transaction/TransactionEntity";
 import { Cards } from "./Cards";
 
 describe("Cards - formatCards", () => {

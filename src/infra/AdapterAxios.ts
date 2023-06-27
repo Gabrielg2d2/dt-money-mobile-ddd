@@ -4,7 +4,7 @@ import { IAdapterApi } from "./IAdapterApi";
 export class AdapterAxios implements IAdapterApi {
   private readonly api: Axios;
 
-  constructor(private readonly baseURL: string = "http://localhost:3333") {
+  constructor(private readonly baseURL: string = "http://192.168.15.7:3333/") {
     this.api = axios.create({
       baseURL: this.baseURL,
     });
