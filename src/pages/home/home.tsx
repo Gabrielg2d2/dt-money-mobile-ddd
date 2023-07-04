@@ -26,77 +26,107 @@ function formatDate(currentDate: string) {
   return date.toLocaleDateString("pt-BR");
 }
 
+type ModalNewTransactionTypes = {
+  showModalNewTransaction: boolean;
+  setShowModalNewTransaction: (value: boolean) => void;
+  typeTransaction: string;
+  handleTypeTransaction: () => void;
+};
+
+function ModalNewTransaction(props: ModalNewTransactionTypes) {
+  return (
+    <SafeAreaView>
+      <Modal
+        animationType={"slide"}
+        transparent
+        visible={props.showModalNewTransaction}
+      >
+        <View style={styles.modalModal}>
+          <View style={styles.modalHeader}>
+            <Text style={styles.modalText}>Cadastrar transação</Text>
+            <TouchableOpacity
+              onPress={() => {
+                props.setShowModalNewTransaction(
+                  !props.showModalNewTransaction
+                );
+              }}
+              style={{
+                marginTop: 10,
+                padding: 10,
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 20,
+                  color: "#363F5F",
+                }}
+              >
+                X
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          <TextInput placeholder={"Nome"} style={styles.modalInput} />
+          <TextInput
+            placeholder={"Preço"}
+            keyboardType="numeric"
+            style={styles.modalInput}
+          />
+          <View
+            style={{
+              marginTop: 10,
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
+            <TouchableOpacity
+              onPress={props.handleTypeTransaction}
+              style={{
+                ...styles.modalButton,
+                backgroundColor:
+                  props.typeTransaction === "incoming" ? "#D1DFD7" : "#fff",
+              }}
+            >
+              <Text>Entrada</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={props.handleTypeTransaction}
+              style={{
+                ...styles.modalButton,
+                backgroundColor:
+                  props.typeTransaction !== "incoming" ? "#e6d4d7" : "#fff",
+              }}
+            >
+              <Text>Saída</Text>
+            </TouchableOpacity>
+          </View>
+          <TextInput placeholder={"Categoria"} style={styles.modalInput} />
+          <TouchableOpacity onPress={() => {}} style={styles.modalButtonSubmit}>
+            <Text
+              style={{
+                color: "#fff",
+              }}
+            >
+              Cadastrar
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </Modal>
+    </SafeAreaView>
+  );
+}
+
 export function Home() {
   const [loading, setLoading] = useState(true);
   const [cards] = useState(new FactoryCards().execute());
   const [transactions] = useState(new FactoryTransaction().execute());
+  const [typeTransaction, setTypeTransaction] = useState("incoming");
   const [showModalNewTransaction, setShowModalNewTransaction] = useState(false);
 
-  function ModalNewTransaction() {
-    return (
-      <SafeAreaView>
-        <Modal
-          animationType={"slide"}
-          transparent
-          visible={showModalNewTransaction}
-        >
-          <View style={styles.modalModal}>
-            <View style={styles.modalHeader}>
-              <Text style={styles.modalText}>Cadastrar transação</Text>
-              <TouchableOpacity
-                onPress={() => {
-                  setShowModalNewTransaction(!showModalNewTransaction);
-                }}
-                style={{
-                  marginTop: 10,
-                  padding: 10,
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: 20,
-                    color: "#363F5F",
-                  }}
-                >
-                  X
-                </Text>
-              </TouchableOpacity>
-            </View>
-
-            <TextInput placeholder={"Nome"} style={styles.modalInput} />
-            <TextInput
-              placeholder={"Preço"}
-              keyboardType="numeric"
-              style={styles.modalInput}
-            />
-            <View
-              style={{
-                marginTop: 10,
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-              }}
-            >
-              <TouchableOpacity style={styles.modalButton}>
-                <Text>Entrada</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.modalButton}>
-                <Text>Saída</Text>
-              </TouchableOpacity>
-            </View>
-            <TextInput placeholder={"Categoria"} style={styles.modalInput} />
-            <TouchableOpacity style={styles.modalButtonSubmit}>
-              <Text
-                style={{
-                  color: "#fff",
-                }}
-              >
-                Cadastrar
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </Modal>
-      </SafeAreaView>
+  function handleTypeTransaction() {
+    setTypeTransaction((prev) =>
+      prev !== "incoming" ? "incoming" : "withdrawn"
     );
   }
 
@@ -117,7 +147,14 @@ export function Home() {
 
   return (
     <>
-      {showModalNewTransaction && <ModalNewTransaction />}
+      {showModalNewTransaction && (
+        <ModalNewTransaction
+          showModalNewTransaction={showModalNewTransaction}
+          setShowModalNewTransaction={setShowModalNewTransaction}
+          typeTransaction={typeTransaction}
+          handleTypeTransaction={handleTypeTransaction}
+        />
+      )}
 
       <View style={styles.container}>
         <StatusBar style="auto" />
