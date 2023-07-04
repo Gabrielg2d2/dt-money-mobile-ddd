@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
   modalInput: {
     marginTop: 10,
     width: "100%",
-    height: 50,
+    height: 56,
     borderRadius: 5,
     backgroundColor: "#E7E9EE",
     padding: 10,
@@ -383,7 +383,7 @@ const styles = StyleSheet.create({
   },
   modalButton: {
     backgroundColor: "#fff",
-    padding: 10,
+    padding: 14,
     borderRadius: 5,
     borderWidth: 1,
     borderColor: "#D7D7D7",
@@ -396,7 +396,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     width: "100%",
-    height: 50,
+    height: 60,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
