@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "dev": "expo start && json-server --watch ./data/db.json --port 3333",
+    "dev": "expo start && json-server --watch ./data/db.json --host 192.168.15.10 --port 3333",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -14,7 +14,7 @@
     "testDebug": "jest -o --watch --coverage=false",
     "testFinal": "jest",
     "updateSnapshots": "jest -u --coverage=false",
-    "server": "json-server --watch ./data/db.json --host 192.168.15.7 --port 3333"
+    "server": "json-server --watch ./data/db.json --host 192.168.15.10 --port 3333"
   },
   "jest": {
     "preset": "@testing-library/react-native",
